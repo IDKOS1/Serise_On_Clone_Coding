@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/movie"
+        android:title="영화"
+        android:enabled="true"
+        android:icon="@drawable/ic_movie" />
+
+    <item android:id="@+id/on_air"
+        android:title="방송"
+        android:enabled="true"
+        android:icon="@drawable/ic_on_air"/>
+
+    <item android:id="@+id/membership"
+        android:title="멤버쉽"
+        android:enabled="true"
+        android:icon="@drawable/ic_membership"/>
+
+    <item android:id="@+id/search"
+        android:title="검색"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"/>
+
+    <item android:id="@+id/my"
+        android:title="MY"
+        android:enabled="true"
+        android:icon="@drawable/ic_my"/>
+
+</menu>
