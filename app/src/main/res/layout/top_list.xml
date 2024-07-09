@@ -11,7 +11,7 @@
         android:id="@+id/poster"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/shape"
+        android:background="@drawable/radius_5dp_background"
         android:clipToOutline="true"
         android:scaleType="centerCrop"
         android:src="@drawable/mv_firstman"

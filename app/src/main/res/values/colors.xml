@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="bl_transparent">#F01A1A1A</color>
+    <color name="movieBackground">#1A1A1A</color>
+    303030
 </resources>
