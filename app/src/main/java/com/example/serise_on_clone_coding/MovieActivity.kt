@@ -1,31 +1,29 @@
 package com.example.serise_on_clone_coding
 
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat
+import com.example.serise_on_clone_coding.databinding.MoviePageBinding
+
 import java.util.Collections
-import kotlin.random.Random
 
 class MovieActivity : AppCompatActivity() {
+    private lateinit var binding: MoviePageBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = MoviePageBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(R.layout.movie_page)
 
-        val main_scroll_view = findViewById<NewScrollView>(R.id.custom_scroll_view)
-        val stickyLayout = findViewById<LinearLayout>(R.id.ll_upper_tap_bar)
+        val mainScrollView = binding.customScrollView
+        val stickyLayout = binding.llUpperTapBar
 
-        main_scroll_view.run {
+        mainScrollView.run {
             header = stickyLayout
             stickListener = { _ ->
                 Log.d("LOGGER_TAG", "stickListener")
@@ -87,10 +85,9 @@ class MovieActivity : AppCompatActivity() {
                 layoutInflater.inflate(style, movieLayout, false)
 
             val imageView = layout.findViewById<ImageView>(R.id.poster!!)
-            val resourceId = resources.getIdentifier(movie.imgSrc, "drawable", packageName)
             val textView = layout.findViewById<TextView>(R.id.title!!)
 
-            imageView.setImageResource(resourceId)
+            imageView.setImageResource(movie.imgSrc)
             textView.text = movie.title
 
             layout.setOnClickListener {
