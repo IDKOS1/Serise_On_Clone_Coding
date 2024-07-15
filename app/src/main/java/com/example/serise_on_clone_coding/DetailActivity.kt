@@ -48,8 +48,7 @@ class DetailActivity : AppCompatActivity() {
         )
 
         for ((index, image) in randomMovies.take(3).withIndex()) {
-            val trailerResource = resources.getIdentifier(image.imgSrc, "drawable", packageName)
-            trailerImages[index].setImageResource(trailerResource)
+            trailerImages[index].setImageResource(image.imgSrc)
         }
 
 
@@ -61,10 +60,9 @@ class DetailActivity : AppCompatActivity() {
                 layoutInflater.inflate(style, recommendMovie, false)
 
             val imageView = layout.findViewById<ImageView>(R.id.poster!!)
-            val resourceId = resources.getIdentifier(recommendMovieItem.imgSrc, "drawable", packageName)
             val textView = layout.findViewById<TextView>(R.id.title!!)
 
-            imageView.setImageResource(resourceId)
+            imageView.setImageResource(recommendMovieItem.imgSrc)
             textView.text = recommendMovieItem.title
 
             layout.setOnClickListener {
@@ -117,8 +115,7 @@ class DetailActivity : AppCompatActivity() {
         if (movie != null) {
             // 미리보기 이미지 설정
             val trailerImage = findViewById<ImageView>(R.id.iv_trailer)
-            val trailerResource = resources.getIdentifier(movie.imgSrc, "drawable", packageName)
-            trailerImage.setImageResource(trailerResource)
+            trailerImage.setImageResource(movie.imgSrc)
 
             // 미리보기 이미지 클릭 시 유튜브 검색 링크로 이동
             val url = "https://www.youtube.com/results?search_query=${movieTitle}"
@@ -129,7 +126,7 @@ class DetailActivity : AppCompatActivity() {
 
             // 트레일러1 메인 포스터 이미지 설정
             val trailer1 = findViewById<ImageView>(R.id.iv_trailer_1)
-            trailer1.setImageResource(trailerResource)
+            trailer1.setImageResource(movie.imgSrc)
 
             // 타이틀 설정
             val titleTextView = findViewById<TextView>(R.id.tv_title)
