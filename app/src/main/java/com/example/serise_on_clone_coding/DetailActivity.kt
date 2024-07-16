@@ -10,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.serise_on_clone_coding.Data.Movies
 import java.util.Collections
 
 class DetailActivity : AppCompatActivity() {
