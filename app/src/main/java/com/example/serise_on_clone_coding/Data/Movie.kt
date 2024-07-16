@@ -1,4 +1,6 @@
-package com.example.serise_on_clone_coding
+package com.example.serise_on_clone_coding.Data
+
+import com.example.serise_on_clone_coding.R
 
 data class Movie(
     val title: String,
