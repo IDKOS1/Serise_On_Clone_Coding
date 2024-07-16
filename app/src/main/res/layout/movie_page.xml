@@ -132,22 +132,18 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <HorizontalScrollView
-                    android:id="@+id/hsv_hot"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_hot"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
+                    android:orientation="horizontal"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHeight_percent="0.85"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cl_hot_text">
 
-                    <LinearLayout
-                        android:id="@+id/ll_hotMovie"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" />
-                </HorizontalScrollView>
+                </androidx.recyclerview.widget.RecyclerView>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -193,8 +189,8 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <HorizontalScrollView
-                    android:id="@+id/hsv_trend"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_trend"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -203,13 +199,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cl_trend_text">
 
-                    <LinearLayout
-                        android:id="@+id/ll_trendMovie"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" />
-
-                </HorizontalScrollView>
+                </androidx.recyclerview.widget.RecyclerView>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -267,8 +257,8 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <HorizontalScrollView
-                    android:id="@+id/hsv_top"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_top"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -277,14 +267,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cl_top_text">
 
-                    <LinearLayout
-                        android:id="@+id/ll_top_movie"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" />
-
-
-                </HorizontalScrollView>
+                </androidx.recyclerview.widget.RecyclerView>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -329,8 +312,8 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <HorizontalScrollView
-                    android:id="@+id/hsv_updated"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_updated"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -339,14 +322,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cl_updated_text">
 
-                    <LinearLayout
-                        android:id="@+id/ll_updated_movie"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" />
-
-
-                </HorizontalScrollView>
+                </androidx.recyclerview.widget.RecyclerView>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
