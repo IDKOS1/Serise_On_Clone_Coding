@@ -36,7 +36,7 @@ class MovieAdapter(val movies: MutableList<Movie>) : RecyclerView.Adapter<MovieA
         return movies.size
     }
 
-    inner class Holder(val binding: PosterListBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class Holder(binding: PosterListBinding) : RecyclerView.ViewHolder(binding.root) {
         val posterImage = binding.poster
         val title = binding.title
     }
